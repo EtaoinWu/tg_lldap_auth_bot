@@ -40,7 +40,11 @@ class AuthBot {
 
     this.lldap_client = getLldapClient();
 
-    this.bot = new Bot(this.token);
+    this.bot = new Bot(this.token, {
+      client: {
+        apiRoot: config.api_root,
+      }
+    });
 
     this.bot.catch((err) => {
       this.report_error(err);

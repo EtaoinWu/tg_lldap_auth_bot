@@ -1,5 +1,6 @@
 tg:
   bot_token: "114514:dsadadhaskjdhajkdhKAJSHDKJASHDKJASDHKJAD"
+  api_root: "https://api.telegram.org/bot" # optional
   log_chat_id: -100123456765
   authorized_chats:
     - chat: -1002345676521
@@ -15,8 +16,7 @@ lldap_api:
   url_base: "https://lldap.example.com/"
   username: "lldap_username_here"
   password: "VERY_LONG_LLDAP_USER_PASSWORD_HERE"
-  relogin_time: 21600
+  relogin_time: 21600 # optional
 
 help_text:
   login_url: "https://lldap.example.com/"
-  

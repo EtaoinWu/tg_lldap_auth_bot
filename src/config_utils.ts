@@ -4,6 +4,7 @@ import * as y from "https://esm.sh/yup@1.4.0";
 const configSchema = y.object({
   tg: y.object({
     bot_token: y.string().required(),
+    api_root: y.string().url().default("https://api.telegram.org"),
     log_chat_id: y.number().required(),
     authorized_chats: y.array(y.object({
       chat: y.number().integer().required(),
