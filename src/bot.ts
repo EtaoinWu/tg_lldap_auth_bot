@@ -250,7 +250,7 @@ class AuthBot {
         { parse_mode: "HTML" },
       );
       this.report_message(
-        `User <b>${username}</b> has been registered by ${escapeHtml(user.first_name)}(${user.id}) in chat ${chat.id}`,
+        `User “${username}” has been registered by ${escapeHtml(user.first_name)}(${user.id}) in chat ${chat.id}`,
       )
       await Promise.all(this.config.authorized_chats.map(async (chat) => {
         console.log(chat);
