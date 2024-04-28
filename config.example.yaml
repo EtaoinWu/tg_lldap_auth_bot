@@ -1,0 +1,22 @@
+tg:
+  bot_token: "114514:dsadadhaskjdhajkdhKAJSHDKJASHDKJASDHKJAD"
+  log_chat_id: -100123456765
+  authorized_chats:
+    - chat: -1002345676521
+      nickname: "Your Group"
+      ldap_group_id: 72
+    
+  member_types:
+    creator: 1
+    administrator: 1
+    member: 1
+
+lldap_api:
+  url_base: "https://lldap.example.com/"
+  username: "lldap_username_here"
+  password: "VERY_LONG_LLDAP_USER_PASSWORD_HERE"
+  relogin_time: 21600
+
+help_text:
+  login_url: "https://lldap.example.com/"
+  
